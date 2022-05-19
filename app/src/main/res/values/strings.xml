@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MoviesAPP</string>
+    <string name="name">Name</string>
+    <string name="password">password</string>
+    <string name="user">User</string>
+    <string name="ingresar">ingresar</string>
+    <string name="error_login">Ingrese bien la Cuenta</string>
+</resources>
