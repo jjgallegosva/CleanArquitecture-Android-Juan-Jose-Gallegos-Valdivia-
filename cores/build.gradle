@@ -1,0 +1,35 @@
+/*plugins {
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
+}*//*
+
+*/
+/*
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+dependencies {
+    def koin_version = "3.0.1"
+    implementation "io.insert-koin:koin-android:${koin_version}"
+    implementation "io.insert-koin:koin-android-ext:${koin_version}"
+    implementation "io.insert-koin:koin-androidx-workmanager:${koin_version}"
+}
+
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+
+*//*
+
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation "org.koin:koin-core:2.1.6"
+
+    testImplementation "org.koin:koin-test:2.1.6"
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"*/

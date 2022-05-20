@@ -33,6 +33,16 @@ android {
     buildFeatures {
         dataBinding = true
     }
+    buildTypes {
+        debug {
+            resValue("string", "api_url", "https://api.themoviedb.org/3/movie/")
+        }
+        release {
+            resValue("string", "api_url", "https://api.themoviedb.org/3/movie/")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
 }
 
 dependencies {
@@ -50,4 +60,15 @@ dependencies {
     implementation "io.insert-koin:koin-androidx-workmanager:${koin_version}"
     /* google material */
     implementation 'com.google.android.material:material:1.6.0'
+
+    // room
+    def room_version = "2.2.5"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+
+    // retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.8.0'
 }
