@@ -1,4 +1,4 @@
-package com.example.moviesapp.login
+package com.example.moviesapp.ui.login
 
 data class LoginDTO(
     val user : String,

@@ -1,4 +1,4 @@
-package com.example.moviesapp.login
+package com.example.moviesapp.ui.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -22,8 +22,8 @@ class LoginActivity : AppCompatActivity() {
 
 
         binding.btnIngresar.setOnClickListener {
-            val user = binding.etUser.text.toString()
-            val password = binding.etPassword.text.toString()
+            val user = binding.usuario.text.toString()
+            val password = binding.usuPassword.text.toString()
             val loginPermiso = LoginDTO(getString(R.string.user),getString(R.string.password))
             if(loginViewModel.ingresar(LoginDTO(user,password),loginPermiso)){
                 startActivity(Intent(this, MainActivity::class.java))

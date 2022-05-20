@@ -1,4 +1,4 @@
-package com.example.moviesapp.login
+package com.example.moviesapp.ui.login
 
 import androidx.lifecycle.ViewModel
 

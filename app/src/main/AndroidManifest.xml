@@ -15,9 +15,9 @@
         android:theme="@style/Theme.MoviesAPP"
         tools:targetApi="31">
         <activity
-            android:name=".login.LoginActivity"
+            android:name=".ui.splash.SplashActivity"
             android:exported="true"
-            >
+            android:theme="@style/AppTheme.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,10 +25,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.login.LoginActivity"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
     </application>
 
 </manifest>
