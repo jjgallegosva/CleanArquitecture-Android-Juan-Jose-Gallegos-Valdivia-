@@ -19,7 +19,7 @@
             android:layout_height="178dp"
 
             android:layout_marginBottom="16dp"
-            android:src="@drawable/iamges"
+            android:src="@drawable/cinta_cine"
             app:layout_constraintBottom_toTopOf="@+id/guideline46"
 
             app:layout_constraintEnd_toEndOf="parent"
