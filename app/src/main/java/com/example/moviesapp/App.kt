@@ -3,6 +3,8 @@ package com.example.moviesapp
 import android.app.Application
 import com.example.moviesapp.data.di.databaseModule
 import com.example.moviesapp.data.di.networkModule
+import com.example.moviesapp.data.di.repositoryModule
+import com.example.moviesapp.di.dataModule
 import com.example.moviesapp.di.presentationModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -10,17 +12,17 @@ import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
 
 class App: Application() {
-    //val coreModules = listOf(interactionModule)
+    val coreModules = listOf(dataModule)
     val appModules = listOf(presentationModule)
-    val dataModules = listOf(networkModule,databaseModule)
+    val dataModules = listOf(networkModule,databaseModule,repositoryModule)
 
     override fun onCreate(){
         super.onCreate()
         startKoin {
             if (BuildConfig.DEBUG) androidLogger(Level.ERROR)
             androidContext(this@App)
-            modules( appModules+dataModules)
-            //modules(coreModules + dataModules + appModules)
+            //modules( dataModules+appModules)
+            modules(coreModules + dataModules + appModules)
         }
 
     }
