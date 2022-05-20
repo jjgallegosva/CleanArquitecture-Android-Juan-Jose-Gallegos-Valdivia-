@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity() {
 
         binding.btnIngresar.setOnClickListener {
             val user = binding.usuario.text.toString()
-            val password = binding.usuPassword.text.toString()
+            val password = binding.usuContra.text.toString()
             val loginPermiso = LoginDTO(getString(R.string.user),getString(R.string.password))
             if(loginViewModel.ingresar(LoginDTO(user,password),loginPermiso)){
                 startActivity(Intent(this, MainActivity::class.java))
