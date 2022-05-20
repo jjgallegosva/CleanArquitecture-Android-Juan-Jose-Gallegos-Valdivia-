@@ -6,7 +6,7 @@ import com.example.moviesapp.data.common.Repository
 import com.example.moviesapp.data.network.Api
 import com.example.moviesapp.core.common.Result
 import com.example.moviesapp.data.network.getDataAsListApi
-import com.example.moviesapp.data.network.getData
+
 class MovieRepositoryImpl(private val api: Api, private val movieDao: MovieDao):
     Repository<Movie, MovieEntity>(), MovieRepository {
     override suspend fun getMovieList(id: Int): Result<List<Movie>> {

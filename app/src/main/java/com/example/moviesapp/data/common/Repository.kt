@@ -1,7 +1,4 @@
 package com.example.moviesapp.data.common
-
-
-
 import com.example.moviesapp.core.common.*
 import com.example.moviesapp.data.network.DomainMapper
 import com.example.moviesapp.data.utils.NetworkUtils

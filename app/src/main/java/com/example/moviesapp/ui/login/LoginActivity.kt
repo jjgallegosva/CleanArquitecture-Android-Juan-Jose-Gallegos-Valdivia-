@@ -7,8 +7,6 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.example.moviesapp.MainActivity
 import com.example.moviesapp.R
-import com.example.moviesapp.common.Success
-import com.example.moviesapp.common.*
 import com.example.moviesapp.databinding.ActivityLoginBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
