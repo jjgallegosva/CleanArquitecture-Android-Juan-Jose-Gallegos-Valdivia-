@@ -17,4 +17,20 @@
     <string name="title_home">Peliculas</string>
     <string name="title_dashboard">Detalles</string>
     <string name="title_notifications">Notifications</string>
+    <string name="titulo_de_la_pelicula">Titulo de la Pelicula</string>
+    <string name="_2022_05_20">2022-05-20</string>
+    <string name="portada_de_la_pelicula">Portada de la Pelicula</string>
+    <string name="titulo_original">Titulo Original</string>
+    <string name="nombremovie">NombreMovie</string>
+    <string name="lenguaje_original">Lenguaje Original</string>
+    <string name="es">ES</string>
+    <string name="apto_para_todos">Apto para todos</string>
+    <string name="_2000">2000</string>
+    <string name="puntaje">Puntaje:</string>
+    <string name="_5_5_10">5.5/10</string>
+    <string name="traduccion_del_detalle_de_la_pelicula">Traduccion del detalle de la pelicula</string>
+    <string name="general">General</string>
+    <string name="cargando">Cargando</string>
+    <string name="no_traduce">No se puede traducir el Texto Obtenido</string>
+    <string name="error_al_traducir">Error al Traducir</string>
 </resources>

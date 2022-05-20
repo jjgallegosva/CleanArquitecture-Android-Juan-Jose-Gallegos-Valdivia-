@@ -107,7 +107,7 @@ class MoviesFragment : Fragment(),CellClickListener{
     override fun onCellClickListener(movie: Movie) {
         val bundle = Bundle()
         bundle.putSerializable("movie", movie)
-       // findNavController().navigate(R.id.action_navigation_home_to_navigation_dashboard,bundle)
+       findNavController().navigate(R.id.action_navigation_movie_to_navigation_detailsmovie,bundle)
     }
 
 }
