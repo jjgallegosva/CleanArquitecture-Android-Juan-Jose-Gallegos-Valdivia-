@@ -1,1 +1,1 @@
-# Zoluxiones-Challenge-Juan-Jose-Gallegos-Valdivia-
+# CleanArquitecture-Android-Juan-Jose-Gallegos-Valdivia-
